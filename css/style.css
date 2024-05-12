@@ -6,6 +6,7 @@ html, body {
     
 }
 
+
 main {
 min-height: 100%;
 
@@ -18,5 +19,6 @@ min-width: 0;
 footer {
     position: sticky;
     bottom: 0;
+    min-width: 0;
    background-color: blueviolet;
 }
