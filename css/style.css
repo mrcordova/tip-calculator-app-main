@@ -1,6 +1,12 @@
 
 :root {
     --very-dark-cyan: hsl(183, 100%, 15%);
+    --strong-cyan: hsl(172, 67%, 45%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
 }
 html, body {
    
@@ -10,31 +16,34 @@ html, body {
 .bill-con {
     display: flex;
     flex-direction: column;
+    
 }
 .form-con {
     display: flex;
     flex-direction: column;
-   padding: clamp(2rem, 1rem + 0.5vw, 3rem);
-    background-color: red;
-    /* margin-inline: clamp(0rem, 2vh + 1rem, 10rem); */
-    align-items: center;
-    justify-content: center;
-    /* flex: 1; */
-    /* min-width: 100%; */
+    background-color: var(--white);
+    flex: 1;
 }
 #tip-form {
-    /* flex: 1; */
+   
 
 }
-main {
-    display: flex;
-    
-    flex-direction: column;
-    min-height: 100%;
-    min-width: 0;
-    justify-content: center;
-    align-items: center;
 
+body {
+    background-color: var(--light-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    /* flex: 1; */
+}
+main {
+    
+    display: flex;  
+    flex-direction: column;
+    
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
 }
 
 .people-con {
@@ -57,22 +66,26 @@ fieldset>div {
 }
 .tips-con {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: [tips-start] 1fr 1fr [tips-end];
     grid-template-rows: repeat(4,1fr);
     gap: 2px;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    min-width: 0;
-   background-color: blueviolet;
+.footer-con {
+    
 }
 
 @media (min-width: 760px) {
+
+    body {
+        grid-template-columns: minmax(var(--padding-inline), 1rem) [content-start] min(100% - (var(--padding-inline)* 2), var(--content-max-width)) [content-end] minmax(var(--padding-inline), 2rem);
+    }
     .form-con {
         flex-direction: row;
         
+    }
+    main {
+        align-items: center;
     }
     .tips-con {
         grid-template-columns: repeat(3, 1fr);
