@@ -16,6 +16,7 @@ html, body {
 .bill-con {
     display: flex;
     flex-direction: column;
+    flex: 1;
     
 }
 .form-con {
@@ -23,10 +24,13 @@ html, body {
     flex-direction: column;
     background-color: var(--white);
     flex: 1;
+    
 }
 #tip-form {
+   display: flex;
+   flex-direction: column;
    
-
+    flex: 1;
 }
 
 body {
@@ -49,6 +53,7 @@ main {
 .people-con {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .title {
@@ -68,9 +73,16 @@ fieldset>div {
     display: grid;
     grid-template-columns: [tips-start] 1fr 1fr [tips-end];
     grid-template-rows: repeat(4,1fr);
-    gap: 2px;
+    gap: 10px;
+    flex: 1;
 }
-
+.tip-display-con {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--very-dark-cyan);
+    margin: 1rem;
+}
 .footer-con {
     
 }
