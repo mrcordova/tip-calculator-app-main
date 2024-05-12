@@ -1,5 +1,7 @@
 
-
+:root {
+    --very-dark-cyan: hsl(183, 100%, 15%);
+}
 html, body {
    
     height: 100%;
@@ -12,7 +14,7 @@ html, body {
 .form-con {
     display: flex;
     flex-direction: column;
-   
+   padding: clamp(2rem, 1rem + 0.5vw, 3rem);
     background-color: red;
     /* margin-inline: clamp(0rem, 2vh + 1rem, 10rem); */
     align-items: center;
@@ -48,10 +50,17 @@ main {
 input[type="radio"] {
     display: none;
 }
-input[type="radio"] +label {
+fieldset>div {
+   background-color: var(--very-dark-cyan);
+   text-align: center;
    
 }
-
+.tips-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 2px;
+}
 
 footer {
     position: sticky;
@@ -64,5 +73,8 @@ footer {
     .form-con {
         flex-direction: row;
         
+    }
+    .tips-con {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
