@@ -40,7 +40,7 @@ html, body {
    display: flex;
    flex-direction: column;
    
-    flex: 1;
+    flex: 2;
     padding: 2rem;
 }
 
@@ -103,9 +103,12 @@ fieldset>div {
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
     color: var(--white);
-    flex: 1;
+    flex: 2;
     align-items: center;
     justify-content: center;
+}
+.tips-con>legend {
+  color: var(--dark-grayish-cyan);
 }
 
 /* .tip-amount-con {
