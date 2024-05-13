@@ -206,12 +206,14 @@ fieldset>div {
 .tip-display-con>div>p {
     color: var(--dark-grayish-cyan);
     min-width: 0;
+    
 }
 
 .tip-display-con>p {
     color: var(--strong-cyan);
     justify-self: end;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2rem + 0.90vw, 3rem);
+    
     min-width: 0;
 }
 
@@ -247,6 +249,10 @@ fieldset>div {
     }
     .bill-con {
         flex: none;
+    }
+
+    #custom {
+        padding-inline: 5px 10px;
     }
     .form-con {
         flex-direction: row;
