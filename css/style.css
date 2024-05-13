@@ -19,7 +19,7 @@ html, body {
 #bill {
     background: url("../images/icon-dollar.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-inline: 35px 15px;
+   
     
     
 }
@@ -91,7 +91,7 @@ main {
 #people {
     background: url("../images/icon-person.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-inline: 35px 15px;
+    /* padding-inline: 35px 15px; */
     
 }
 
@@ -125,6 +125,7 @@ input[type="number"] {
     font-size: 1.5rem;
     text-align: end;
     border-radius: 5px; 
+    padding-inline: 35px 15px;
     
 }
 input[type='number']::placeholder {
