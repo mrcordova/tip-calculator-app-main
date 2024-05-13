@@ -189,7 +189,7 @@ fieldset>div {
     grid-template-rows: 1fr 1fr 1fr;
     flex: 1;
     background-color: var(--very-dark-cyan);
-    margin: 2rem;
+    margin: 1.5rem;
     padding: 2rem;
     border-radius: 15px;
 }
@@ -213,6 +213,12 @@ fieldset>div {
     background-color: var(--strong-cyan);
     align-self: center;
     justify-self: center;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+    color: var(--very-dark-cyan);
+    border-radius: 7px;
     /* background-color: red; */
 }
 .footer-con {
