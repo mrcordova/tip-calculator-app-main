@@ -144,6 +144,7 @@ label[for="bill"], label[for="people"]{
 
 label[for="people"]>span {
     display: none;
+    color: red;
 }
 
 input[type="number"] {
