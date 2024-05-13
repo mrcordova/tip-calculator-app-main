@@ -27,6 +27,7 @@ html, body {
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
     text-align: end;
+    min-width: 0;
 }
 /* #custom::placeholder {
     color: var(--dark-grayish-cyan);
