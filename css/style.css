@@ -71,9 +71,14 @@ main {
     min-width: 0;
     
 }
+
+input {
+    font-size: 1.5rem;
+}
 input[type="radio"] {
     display: none;
 }
+
 
 
 fieldset>div {
@@ -84,9 +89,12 @@ fieldset>div {
 .tips-con {
     display: grid;
     grid-template-columns: [tips-start] 1fr 1fr [tips-end];
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 10px;
+    
     flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 /* .tip-amount-con {
@@ -107,10 +115,19 @@ fieldset>div {
 .resetBtn {
     /* grid-row: 3; */
     grid-column: 1 / span 2; 
+    background-color: var(--strong-cyan);
+    align-self: center;
+    justify-self: center;
     /* background-color: red; */
 }
 .footer-con {
     
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
 @media (min-width: 760px) {
