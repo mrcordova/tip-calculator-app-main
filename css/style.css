@@ -245,14 +245,31 @@ fieldset>div {
     body {
         grid-template-columns: minmax(var(--padding-inline), 1rem) [content-start] min(100% - (var(--padding-inline)* 2), var(--content-max-width)) [content-end] minmax(var(--padding-inline), 2rem);
     }
+    .bill-con {
+        flex: none;
+    }
     .form-con {
         flex-direction: row;
         border-radius: 20px;
+        max-block-size: 30rem;
+        max-inline-size: 55rem;
     }
     main {
         align-items: center;
     }
     .tips-con {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-block-end: 0;
+        
+    }
+    .people-con {
+        padding-block-end: 1.5rem;
+    }
+   #tip-form {
+    flex: 1;
+    }
+    .tip-display-con {
+        margin-inline-start: 0;
     }
 }
