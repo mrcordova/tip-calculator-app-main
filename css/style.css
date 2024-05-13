@@ -181,7 +181,15 @@ fieldset>div {
     padding-block: 10px;
     border-radius: 5px;
     font-size: 1.5rem;
+    
    
+}
+
+fieldset>div:hover, fieldset>div>*:hover {
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    
 }
 .tips-con {
     display: grid;
