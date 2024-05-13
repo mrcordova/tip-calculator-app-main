@@ -20,10 +20,13 @@ html, body {
     background: url("../images/icon-dollar.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
    
-    
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+#bill:is(:focus, :hover) {
+    border: 2px solid var(--strong-cyan);
     
 }
-
 /* #bill::placeholder {
     background: url("../images/icon-dollar.svg") no-repeat left; 
      background-color: var(--very-light-grayish-cyan);
@@ -43,6 +46,13 @@ html, body {
     text-align: end; */
     padding-inline-end: 15px;
     min-width: 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+}
+
+#custom:is(:focus, :hover) {
+    border: 2px solid var(--strong-cyan);
 }
 /* #custom::placeholder {
     color: var(--dark-grayish-cyan);
@@ -92,8 +102,14 @@ main {
 #people {
     background: url("../images/icon-person.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
+    border: 2px solid transparent;
+    cursor: pointer;
     /* padding-inline: 35px 15px; */
     
+}
+
+#people:is(:focus, :hover) {
+    border: 2px solid var(--strong-cyan);
 }
 
 /* #people::placeholder {
@@ -138,6 +154,7 @@ input[type='number']::placeholder {
     color: var(--dark-grayish-cyan);
     font-size: 1.5rem;
     text-align: end;
+    
     /* border-radius: 200px; */
 }
 input[type="radio"] {
