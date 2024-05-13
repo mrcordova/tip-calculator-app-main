@@ -112,6 +112,10 @@ main {
     border: 2px solid var(--strong-cyan);
 }
 
+#people:invalid {
+    border: 2px solid red;
+}
+
 /* #people::placeholder {
     background: url("../images/icon-person.svg") no-repeat left;
     background-color: var(--very-light-grayish-cyan);
