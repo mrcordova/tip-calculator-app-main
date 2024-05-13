@@ -21,7 +21,9 @@ html, body {
 }
 
 #custom {
-    all: unset
+    all: unset;
+    color: var(--very-dark-cyan);
+    background-color: var(--very-light-grayish-cyan);
 }
 .form-con {
     display: flex;
