@@ -27,6 +27,7 @@ html, body {
 #custom::placeholder {
     color: var(--dark-grayish-cyan);
     font-size: 1.5rem;
+    text-align: end;
 }
 .form-con {
     display: flex;
