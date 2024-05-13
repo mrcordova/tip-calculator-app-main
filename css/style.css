@@ -271,6 +271,7 @@ fieldset>div {
     }
     .people-con {
         padding-block-end: 1.5rem;
+        justify-content: center;
     }
    #tip-form {
     flex: 1;
