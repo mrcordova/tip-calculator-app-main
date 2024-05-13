@@ -279,4 +279,7 @@ fieldset>div {
     .tip-display-con {
         margin-inline-start: 0;
     }
+    .resetBtn {
+        align-self: end;
+    }
 }
