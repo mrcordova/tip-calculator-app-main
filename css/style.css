@@ -142,6 +142,10 @@ label[for="bill"], label[for="people"]{
     color: var(--dark-grayish-cyan);
 }
 
+label[for="people"]>span {
+    display: none;
+}
+
 input[type="number"] {
     all: unset;
     background-color: var(--very-light-grayish-cyan);
