@@ -84,7 +84,9 @@ main {
     min-width: 0;
     
 }
-
+label {
+    color: var(--dark-grayish-cyan);
+}
 input {
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
