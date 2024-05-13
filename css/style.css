@@ -232,6 +232,16 @@ fieldset>div {
     min-width: 0;
     /* background-color: red; */
 }
+
+.resetBtn:disabled {
+ filter: opacity(10%);
+
+}
+
+.resetBtn:not(:disabled):hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
 .footer-con {
     
 }
