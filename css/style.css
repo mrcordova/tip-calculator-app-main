@@ -7,6 +7,8 @@
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
+
+
 }
 html, body {
    
@@ -20,12 +22,12 @@ html, body {
     
 }
 
-/* #custom {
+#custom {
     all: unset;
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
     text-align: end;
-} */
+}
 /* #custom::placeholder {
     color: var(--dark-grayish-cyan);
     font-size: 1.5rem;
@@ -84,9 +86,11 @@ main {
     min-width: 0;
     
 }
-label {
+
+label[for="bill"], label[for="people"]{
     color: var(--dark-grayish-cyan);
 }
+
 input {
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
@@ -103,6 +107,18 @@ input::placeholder {
 }
 input[type="radio"] {
     display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 
