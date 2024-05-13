@@ -19,8 +19,7 @@ html, body {
 #bill {
     background: url("../images/icon-dollar.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-left: 35px;
-    padding-right: 15px;
+    padding-inline: 35px 15px;
     
     
 }
@@ -42,7 +41,7 @@ html, body {
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
     text-align: end; */
-
+    padding-inline-end: 15px;
     min-width: 0;
 }
 /* #custom::placeholder {
@@ -92,8 +91,7 @@ main {
 #people {
     background: url("../images/icon-person.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-left: 35px;
-    padding-right: 15px;
+    padding-inline: 35px 15px;
     
 }
 
