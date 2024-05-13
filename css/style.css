@@ -126,6 +126,7 @@ input[type="number"] {
     text-align: end;
     border-radius: 5px; 
     padding-inline: 35px 15px;
+    padding-block: 10px;
     
 }
 input[type='number']::placeholder {
