@@ -195,19 +195,24 @@ fieldset>div {
     margin: 1.5rem;
     padding: 2rem;
     border-radius: 15px;
+    min-width: 0;
+    gap: 10px;
 }
 
 .tip-display-con>div>h2 {
     color: var(--white);
+    min-width: 0;
 }
 .tip-display-con>div>p {
     color: var(--dark-grayish-cyan);
+    min-width: 0;
 }
 
 .tip-display-con>p {
     color: var(--strong-cyan);
     justify-self: end;
     font-size: 2rem;
+    min-width: 0;
 }
 
 .resetBtn {
@@ -222,6 +227,7 @@ fieldset>div {
     padding-block: 10px;
     color: var(--very-dark-cyan);
     border-radius: 7px;
+    min-width: 0;
     /* background-color: red; */
 }
 .footer-con {
