@@ -23,10 +23,11 @@ html, body {
 }
 
 #custom {
-    all: unset;
+    /* all: unset;
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
-    text-align: end;
+    text-align: end; */
+
     min-width: 0;
 }
 /* #custom::placeholder {
@@ -92,14 +93,15 @@ label[for="bill"], label[for="people"]{
     color: var(--dark-grayish-cyan);
 }
 
-input {
+input[type="number"] {
+    all: unset;
     background-color: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
     font-size: 1.5rem;
     text-align: end;
-    all: unset;
+    
 }
-input::placeholder {
+input[type='number']::placeholder {
     background-color: var(--very-light-grayish-cyan);
     color: var(--dark-grayish-cyan);
     font-size: 1.5rem;
