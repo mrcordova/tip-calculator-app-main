@@ -157,13 +157,16 @@ input[type=number] {
 fieldset>div {
    background-color: var(--very-dark-cyan);
    text-align: center;
+    padding-block: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
    
 }
 .tips-con {
     display: grid;
     grid-template-columns: [tips-start] 1fr 1fr [tips-end];
     grid-template-rows: repeat(3,1fr);
-    gap: 10px;
+    gap: 20px;
     color: var(--white);
     flex: 1;
     align-items: center;
