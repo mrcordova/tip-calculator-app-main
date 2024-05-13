@@ -186,7 +186,7 @@ fieldset>div {
     }
     .form-con {
         flex-direction: row;
-        
+        border-radius: 20px;
     }
     main {
         align-items: center;
