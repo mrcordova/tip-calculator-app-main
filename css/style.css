@@ -101,17 +101,20 @@ main {
     background-color: var(--very-light-grayish-cyan);
 } */
 .title {
-    min-block-size: clamp(5rem, 5vh + 1rem, 15rem);
-    max-inline-size: 2.5rem;
+    min-block-size: clamp(5rem, 5vh + 1rem, 7rem);
+    max-inline-size: 6rem;
     /* word-wrap: break-word; */
     align-self: center;
-    
+    font-size: 1.5rem;
     display: flex;
+    letter-spacing: 0.5rem;
     /* flex-wrap: wrap; */
     overflow-wrap: anywhere;
     align-items: center;
-    background-color: crimson;
+    /* background-color: crimson; */
     min-width: 0;
+    color: var(--very-dark-cyan);
+    padding-block: 20px;
     
 }
 
