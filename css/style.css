@@ -191,6 +191,7 @@ fieldset>div {
     background-color: var(--very-dark-cyan);
     margin: 2rem;
     padding: 2rem;
+    border-radius: 15px;
 }
 
 .tip-display-con>div>h2 {
