@@ -15,6 +15,17 @@ html, body {
     height: 100%;
     
 }
+
+#bill {
+    background: url("../images/icon-dollar.svg") no-repeat left;
+    background-color: var(--very-light-grayish-cyan);
+    
+}
+
+#bill::placeholder {
+    background: url("../images/icon-dollar.svg") no-repeat left;
+    background-color: var(--very-light-grayish-cyan);
+}
 .bill-con {
     display: flex;
     flex-direction: column;
@@ -74,7 +85,15 @@ main {
     flex: 1;
     justify-content: end;
 }
+#people {
+    background: url("../images/icon-person.svg") no-repeat left;
+    background-color: var(--very-light-grayish-cyan);
+}
 
+#people::placeholder {
+    background: url("../images/icon-person.svg") no-repeat left;
+    background-color: var(--very-light-grayish-cyan);
+}
 .title {
     min-block-size: clamp(5rem, 5vh + 1rem, 15rem);
     max-inline-size: 2.5rem;
@@ -101,6 +120,7 @@ input[type="number"] {
     font-size: 1.5rem;
     text-align: end;
     border-radius: 5px;
+    
 }
 input[type='number']::placeholder {
     background-color: var(--very-light-grayish-cyan);
