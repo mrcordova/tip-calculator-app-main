@@ -17,9 +17,12 @@ html, body {
 }
 
 #bill {
-    background: url("../images/icon-dollar.svg") no-repeat left;
+    background: url("../images/icon-dollar.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-left: 15px;
+    padding-left: 35px;
+    padding-right: 15px;
+    
+    
 }
 
 /* #bill::placeholder {
@@ -87,9 +90,11 @@ main {
     justify-content: end;
 }
 #people {
-    background: url("../images/icon-person.svg") no-repeat left;
+    background: url("../images/icon-person.svg") no-repeat 20px;
     background-color: var(--very-light-grayish-cyan);
-    padding-left: 15px;
+    padding-left: 35px;
+    padding-right: 15px;
+    
 }
 
 /* #people::placeholder {
@@ -121,7 +126,7 @@ input[type="number"] {
     color: var(--very-dark-cyan);
     font-size: 1.5rem;
     text-align: end;
-    border-radius: 5px;
+    border-radius: 5px; 
     
 }
 input[type='number']::placeholder {
