@@ -60,7 +60,16 @@ main {
 .title {
     min-block-size: clamp(5rem, 5vh + 1rem, 15rem);
     max-inline-size: 2.5rem;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
+    align-self: center;
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow-wrap: anywhere;
+    align-items: center;
+    background-color: crimson;
+    min-width: 0;
+    
 }
 input[type="radio"] {
     display: none;
