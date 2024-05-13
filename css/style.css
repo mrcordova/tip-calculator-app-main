@@ -100,14 +100,14 @@ input[type="number"] {
     color: var(--very-dark-cyan);
     font-size: 1.5rem;
     text-align: end;
-    
+    border-radius: 5px;
 }
 input[type='number']::placeholder {
     background-color: var(--very-light-grayish-cyan);
     color: var(--dark-grayish-cyan);
     font-size: 1.5rem;
     text-align: end;
-    
+    /* border-radius: 200px; */
 }
 input[type="radio"] {
     display: none;
