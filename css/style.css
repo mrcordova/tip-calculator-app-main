@@ -40,6 +40,7 @@ html, body {
     flex-direction: column;
     background-color: var(--white);
     flex: 1;
+    border-radius: 20px 20px 0 0;
     
 }
 #tip-form {
