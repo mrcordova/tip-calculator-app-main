@@ -205,6 +205,12 @@ fieldset>div:hover, fieldset>div>*:hover {
     background-color: var(--strong-cyan);
     
 }
+input[for="radio"]:checked + label {
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    
+}
+
 .tips-con {
     display: grid;
     grid-template-columns: [tips-start] 1fr 1fr [tips-end];
