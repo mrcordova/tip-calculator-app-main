@@ -144,9 +144,14 @@ label[for="people"] {
 }
 
 label[for="people"]>span {
-    display: none;
+
     color: red;
+} 
+
+.hide {
+    display: none;
 }
+
 
 input[type="number"] {
     all: unset;
