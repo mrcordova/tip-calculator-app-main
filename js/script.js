@@ -16,27 +16,49 @@ const addTipPercentage = (e) => {
     e.preventDefault()
     changeResetBtnState(false);
     tipPercentage = e.currentTarget.children[0].value;
-    console.log(tipPercentage);
+    updateTotals();
+    
 }
 
 const converToPercentage = (num) => (num / 100);
 
 const changeResetBtnState = (val) => resetBtn.disabled = val;
 
+const checkNumOfPeople = () => {
+        const peopleLab = document.querySelector('label[for=people]>span');
+
+     if (numOfPeople == 0 && peopleLab.classList.contains('hide') ) {
+        peopleLab.classList.remove('hide');
+        peopleInput.classList.add('invalid');
+        
+        changeResetBtnState(true);
+    } else if (numOfPeople !== 0) {
+        changeResetBtnState(false);
+        peopleLab.classList.add('hide');
+        peopleInput.classList.remove('invalid');
+        updateTotals();
+    }
+}
+
 const updateTotals = () => {
-    const tipPerPerson = (tipPercentage * bill) / numOfPeople;
-    totalTipAmount.textContent = `$${tipPerPerson.toFixed(2)}`;
-    totalAmount.textContent = `$${((bill / numOfPeople) + tipPerPerson).toFixed(2)}`;
+
+    if (!numOfPeople == 0) {
+        const tipPerPerson = (tipPercentage * bill) / numOfPeople;
+        totalTipAmount.textContent = `$${tipPerPerson.toFixed(2)}`;
+        totalAmount.textContent = `$${((bill / numOfPeople) + tipPerPerson).toFixed(2)}`;
+    } else {
+        checkNumOfPeople();
+    }
 }
 
 
 billInput.addEventListener("input", (e) => {
     changeResetBtnState(false);
-    updateTotals();
     bill = e.currentTarget.value;
+    updateTotals();
 })
 
-for (tipRadioBtn of tipRadioBtns) {
+for (const tipRadioBtn of tipRadioBtns) {
     tipRadioBtn.addEventListener("click", addTipPercentage);
 }
 
@@ -49,20 +71,10 @@ customTipInput.addEventListener("input", (e) => {
 });
 
 peopleInput.addEventListener("input", (e) => {
-    const peopleLab = document.querySelector('label[for=people]>span');
   
     numOfPeople = e.currentTarget.value === "" ? 0 : Math.floor(e.currentTarget.value);
-    if (numOfPeople == 0 && peopleLab.classList.contains('hide') ) {
-        peopleLab.classList.remove('hide');
-        peopleInput.classList.add('invalid');
-        
-        changeResetBtnState(true);
-    } else if (numOfPeople !== 0) {
-        changeResetBtnState(false);
-        peopleLab.classList.add('hide');
-        peopleInput.classList.remove('invalid');
-        updateTotals();
-    }
+    checkNumOfPeople();
+    updateTotals();
    
 })
 
