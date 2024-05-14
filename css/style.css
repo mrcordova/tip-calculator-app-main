@@ -27,11 +27,7 @@ html, body {
     border: 2px solid var(--strong-cyan);
     
 }
-/* #bill::placeholder {
-    background: url("../images/icon-dollar.svg") no-repeat left; 
-     background-color: var(--very-light-grayish-cyan);
-    
-} */
+
 .bill-con {
     display: flex;
     flex-direction: column;
@@ -40,10 +36,7 @@ html, body {
 }
 
 #custom {
-    /* all: unset;
-    background-color: var(--very-light-grayish-cyan);
-    color: var(--very-dark-cyan);
-    text-align: end; */
+    
     padding-inline-end: 15px;
     min-width: 0;
     cursor: pointer;
@@ -76,8 +69,7 @@ body {
     background-color: var(--light-grayish-cyan);
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
-    /* flex: 1; */
+   
 }
 main {
     
@@ -100,7 +92,7 @@ main {
     background-color: var(--very-light-grayish-cyan);
     border: 2px solid transparent;
     cursor: pointer;
-    /* padding-inline: 35px 15px; */
+  
     
 }
 
@@ -115,22 +107,19 @@ main {
 #people.invalid {
     border: 2px solid red;
 }
-/* #people::placeholder {
-    background: url("../images/icon-person.svg") no-repeat left;
-    background-color: var(--very-light-grayish-cyan);
-} */
+
 .title {
     min-block-size: clamp(5rem, 5vh + 1rem, 7rem);
     max-inline-size: 6rem;
-    /* word-wrap: break-word; */
+    
     align-self: center;
     font-size: 1.5rem;
     display: flex;
     letter-spacing: 0.5rem;
-    /* flex-wrap: wrap; */
+    
     overflow-wrap: anywhere;
     align-items: center;
-    /* background-color: crimson; */
+    
     min-width: 0;
     color: var(--very-dark-cyan);
     padding-block: 20px;
@@ -232,13 +221,9 @@ fieldset>div:has(input[type="radio"]:checked) {
   color: var(--dark-grayish-cyan);
 }
 
-/* .tip-amount-con {
-    display: flex;
-    justify-content: space-between;
-} */
+
 .tip-display-con {
     display: grid;
-    /* flex-direction: column; */
     grid-template-columns:  1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     flex: 1;
@@ -269,7 +254,6 @@ fieldset>div:has(input[type="radio"]:checked) {
 }
 
 .resetBtn {
-    /* grid-row: 3; */
     grid-column: 1 / span 2; 
     background-color: var(--strong-cyan);
     align-self: center;
@@ -281,7 +265,6 @@ fieldset>div:has(input[type="radio"]:checked) {
     color: var(--very-dark-cyan);
     border-radius: 7px;
     min-width: 0;
-    /* background-color: red; */
 }
 
 .resetBtn:disabled {
