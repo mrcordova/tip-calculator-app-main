@@ -60,8 +60,7 @@ I will keep learning about CSS grid, flexbox and forms.
 - [Prevent propagation](https://stackoverflow.com/questions/25264726/why-is-the-onclick-event-triggered-twice) - Prevent other elements from overriding the desired result.
 - [How to have a parent react to a child's action](https://stackoverflow.com/questions/26754497/css-disable-hover-effect) - Helped me figured out how to get a parent element to change according to a child action with css.
 - [How to add an icon to textboxes](https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form) -
-  I learned how to add and manipulate the icon in the textbox.
-
+  I learned how to add and manipulate the icon in the textbox.å
 - [How to break up a word with flex](https://dev.to/somshekhar/overflow-wrap-in-a-flex-container-35) - How to manipulate text in a flex container.
 
 ## Author
