@@ -13,11 +13,13 @@ let numOfPeople = 0;
 
 
 const addTipPercentage = (e) => {
-    e.preventDefault()
+    // e.preventDefault()=
     changeResetBtnState(false);
     // console.log(resetBtn.disabled);
+
     tipPercentage = e.currentTarget.children[0].value;
     updateTotals();
+    
     
 }
 
@@ -31,10 +33,10 @@ const checkNumOfPeople = () => {
      if (numOfPeople == 0 && peopleLab.classList.contains('hide') ) {
         peopleLab.classList.remove('hide');
         peopleInput.classList.add('invalid');
-        
-        changeResetBtnState(true);
-    } else if (numOfPeople !== 0) {
+         
         changeResetBtnState(false);
+    } else if (numOfPeople !== 0) {
+        changeResetBtnState(true);
         peopleLab.classList.add('hide');
         peopleInput.classList.remove('invalid');
         // updateTotals();
@@ -47,6 +49,7 @@ const updateTotals = () => {
         const tipPerPerson = (tipPercentage * bill) / numOfPeople;
         totalTipAmount.textContent = `$${tipPerPerson.toFixed(2)}`;
         totalAmount.textContent = `$${((bill / numOfPeople) + tipPerPerson).toFixed(2)}`;
+        changeResetBtnState(false);
     } else {
         checkNumOfPeople();
     }
@@ -80,16 +83,17 @@ peopleInput.addEventListener("input", (e) => {
 })
 
 resetBtn.addEventListener("click", (e) => {
-    
-    billInput.value = 0;
+    e.preventDefault();
+    const checkedRadioBtn = document.querySelector("input:checked");
+    billInput.value = "";
     bill = 0;
-    customTipInput.value = 0.0;
+    customTipInput.value = "";
     tipPercentage = 0.0;
-    peopleInput.value = 0;
+    peopleInput.value = "";
     numOfPeople = 0;
     totalAmount.textContent = '$0.00';
     totalTipAmount.textContent = '$0.00';
-    console.log(checkedRadioBtn);
-    checkedRadioBtn.checked = false;
+    if (checkedRadioBtn) checkedRadioBtn.checked = false;
+    resetBtn.disabled = true;
 
 })

@@ -203,7 +203,7 @@ fieldset>div {
    
 }
 
-fieldset>div:hover, fieldset>div>*:hover {
+fieldset>div:hover, fieldset>div>label:hover {
     cursor: pointer;
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
@@ -211,7 +211,7 @@ fieldset>div:hover, fieldset>div>*:hover {
 }
 
 fieldset>div:has(input[type="radio"]:checked) {
-    color: var(--white);
+    color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
 
 }
@@ -292,9 +292,7 @@ fieldset>div:has(input[type="radio"]:checked) {
     filter: brightness(2);
     cursor: pointer;
 }
-.footer-con {
-    
-}
+
 
 .space-mono-bold {
     font-family: "Space Mono", monospace;
