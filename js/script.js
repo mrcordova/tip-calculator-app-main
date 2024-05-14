@@ -13,10 +13,11 @@ let numOfPeople = 0;
 
 
 const addTipPercentage = (e) => {
-    // e.preventDefault()=
+    // e.preventDefault()
     changeResetBtnState(false);
-    // console.log(resetBtn.disabled);
+    
     resetCustomInput();
+    e.currentTarget.children[0].checked = true;
     tipPercentage = e.currentTarget.children[0].value;
     updateTotals();
     
