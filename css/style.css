@@ -142,6 +142,11 @@ label[for="bill"], label[for="people"]{
     color: var(--dark-grayish-cyan);
 }
 
+label[for="people"] {
+    display: flex;
+    justify-content: space-between;
+}
+
 label[for="people"]>span {
     display: none;
     color: red;
