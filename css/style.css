@@ -195,7 +195,7 @@ fieldset>div {
     padding-block: 10px;
     border-radius: 5px;
     font-size: 1.5rem;
-    
+   
    
 }
 
@@ -205,10 +205,10 @@ fieldset>div:hover, fieldset>div>*:hover {
     background-color: var(--strong-cyan);
     
 }
-input[for="radio"]:checked + label {
+
+fieldset>div:has(input[type="radio"]:checked) {
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
-    
 }
 
 .tips-con {
