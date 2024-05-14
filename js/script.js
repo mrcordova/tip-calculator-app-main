@@ -13,7 +13,6 @@ let numOfPeople = 0;
 
 
 const addTipPercentage = (e) => {
-    // e.preventDefault()
     changeResetBtnState(false);
     
     resetCustomInput();
@@ -47,7 +46,6 @@ const checkNumOfPeople = () => {
         changeResetBtnState(true);
         peopleLab.classList.add('hide');
         peopleInput.classList.remove('invalid');
-        // updateTotals();
     }
 }
 
