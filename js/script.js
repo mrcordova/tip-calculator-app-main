@@ -16,11 +16,18 @@ const addTipPercentage = (e) => {
     // e.preventDefault()=
     changeResetBtnState(false);
     // console.log(resetBtn.disabled);
-
+    resetCustomInput();
     tipPercentage = e.currentTarget.children[0].value;
     updateTotals();
     
     
+}
+const resetCustomInput = () => {
+    customTipInput.value = "";
+}
+const resetRadioBtns = () => {
+    const checkedRadioBtn = document.querySelector("input:checked");
+    if (checkedRadioBtn) checkedRadioBtn.checked = false;
 }
 
 const converToPercentage = (num) => (num / 100);
@@ -58,6 +65,7 @@ const updateTotals = () => {
 
 billInput.addEventListener("input", (e) => {
     changeResetBtnState(false);
+    
     bill = e.currentTarget.value;
     updateTotals();
 })
@@ -68,6 +76,8 @@ for (const tipRadioBtn of tipRadioBtns) {
 
 customTipInput.addEventListener("input", (e) => {
     e.preventDefault();
+    resetRadioBtns();
+
     tipPercentage = converToPercentage(e.currentTarget.value);
     
     updateTotals();
@@ -84,16 +94,17 @@ peopleInput.addEventListener("input", (e) => {
 
 resetBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    const checkedRadioBtn = document.querySelector("input:checked");
+    resetCustomInput();
+    resetRadioBtns();
+    
     billInput.value = "";
     bill = 0;
-    customTipInput.value = "";
     tipPercentage = 0.0;
     peopleInput.value = "";
     numOfPeople = 0;
     totalAmount.textContent = '$0.00';
     totalTipAmount.textContent = '$0.00';
-    if (checkedRadioBtn) checkedRadioBtn.checked = false;
+    
     resetBtn.disabled = true;
 
 })
