@@ -211,8 +211,9 @@ fieldset>div:hover, fieldset>div>*:hover {
 }
 
 fieldset>div:has(input[type="radio"]:checked) {
-    color: var(--very-dark-cyan);
+    color: var(--white);
     background-color: var(--strong-cyan);
+
 }
 
 .tips-con {

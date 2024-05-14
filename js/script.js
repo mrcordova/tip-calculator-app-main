@@ -15,6 +15,7 @@ let numOfPeople = 0;
 const addTipPercentage = (e) => {
     e.preventDefault()
     changeResetBtnState(false);
+    // console.log(resetBtn.disabled);
     tipPercentage = e.currentTarget.children[0].value;
     updateTotals();
     
@@ -36,7 +37,7 @@ const checkNumOfPeople = () => {
         changeResetBtnState(false);
         peopleLab.classList.add('hide');
         peopleInput.classList.remove('invalid');
-        updateTotals();
+        // updateTotals();
     }
 }
 
@@ -63,7 +64,7 @@ for (const tipRadioBtn of tipRadioBtns) {
 }
 
 customTipInput.addEventListener("input", (e) => {
-   
+    e.preventDefault();
     tipPercentage = converToPercentage(e.currentTarget.value);
     
     updateTotals();
@@ -79,7 +80,7 @@ peopleInput.addEventListener("input", (e) => {
 })
 
 resetBtn.addEventListener("click", (e) => {
-    // const checkedRadioBtn = document.querySelector('input[type=radio]:checked');
+    
     billInput.value = 0;
     bill = 0;
     customTipInput.value = 0.0;
@@ -88,5 +89,7 @@ resetBtn.addEventListener("click", (e) => {
     numOfPeople = 0;
     totalAmount.textContent = '$0.00';
     totalTipAmount.textContent = '$0.00';
+    console.log(checkedRadioBtn);
+    checkedRadioBtn.checked = false;
 
 })
